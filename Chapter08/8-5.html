@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style-type: none;
+        }
+        @media (orientation: portrait) {
+          .left{
+              display: none;
+          }
+        }
+        @media (orientation: landscape) {
+          .left{
+              float: left;
+              width: 30%;
+          }
+          .right{
+              float: right;
+              width: 70%;
+          }
+        }
+        div.content{padding:16px;}
+        div.left li{
+            padding-top: 24px;
+            padding-bottom: 24px;
+            border-bottom:1px solid #c7c7c7 ;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="left">
+            <div class="content">
+                <h1>List</h1>
+                <ul>
+                    <li>Consectetur et eiusmod cillum aute officia in id.</li>
+                    <li>Aliqua adipisicing proident culpa ex consequat.</li>
+                    <li>Non ad officia veniam sunt mollit aliqua esse minim mollit est non pariatur esse qui.</li>
+                    <li>Est voluptate id eiusmod sunt.</li>
+                    <li>Consequat deserunt deserunt nulla nulla quis enim sint eiusmod duis culpa ad.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div class="content">
+                <h1>Lorem ipsum</h1>
+                <ul>
+                    <p>Consectetur et eiusmod cillum aute officia in id.</p>
+                    <p>Aliqua adipisicing proident culpa ex consequat.</p>
+                    <p>Non ad officia veniam sunt mollit aliqua esse minim mollit est non pariatur esse qui.</p>
+                    <p>Est voluptate id eiusmod sunt.</p>
+                    <p>Consequat deserunt deserunt nulla nulla quis enim sint eiusmod duis culpa ad.</p>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
