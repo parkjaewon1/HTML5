@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function () {
+          $('h1').click(function () {
+            $('.drawer-menu').slideToggle('slow')
+          })
+        });
+      </script>
+      <style>
+        * { 
+          margin: 0; 
+          padding: 0;
+        }
+        p { margin: 10px 0; }
+      
+        .drawer {
+          position: fixed;
+          width: 100%;
+          text-align: center;
+          color: white;
+          background-color: red
+        }
+      
+        .drawer h1 {
+          height: 50px;
+          line-height: 50px;
+        }
+      
+        .drawer-menu {
+          display: none;
+        }
+      
+        .content {
+          /* 글자가 양쪽에 붙지 않게 설정합니다. */
+          padding: 10px;
+          /* div.drawer에 의해 가려지지 않게 내립니다. */
+          padding-top: 60px; 
+        }
+      </style></head>
+    <body>
+      <div class="drawer">
+        <h1>Logo</h1>
+        <div class="drawer-menu">
+          <p>Esse nulla velit nisi magna duis id laboris. Aliqua sunt eu Lorem exercitation reprehenderit eiusmod irure reprehenderit aliqua aute ad enim enim duis. Aute ullamco veniam laboris adipisicing fugiat excepteur. Officia proident et commodo adipisicing nostrud voluptate.</p>
+        </div>
+      </div>
+      <div class="content">
+        <h1>Lorem ipsum</h1>
+        <p>Qui fugiat nisi sint elit culpa excepteur labore. Sint labore ut tempor ullamco dolor quis fugiat officia mollit eu cillum laborum adipisicing pariatur. Ea ipsum non dolore non nisi consectetur sint cillum sint in incididunt aliqua sit. Velit ex ullamco non cupidatat. Qui non ex nisi adipisicing fugiat.</p>
+        <p>Aute reprehenderit ad quis sint elit sint laborum ullamco amet. Ea amet in qui aute ea in ea pariatur. Eiusmod Lorem eu ad deserunt mollit aute in et voluptate. Lorem aliquip deserunt nisi cillum consequat aliquip aute non mollit nisi minim aliqua consectetur sunt. Laboris veniam fugiat amet ullamco ad proident occaecat dolore occaecat proident deserunt est. Cillum eu ullamco qui est proident aliquip excepteur consequat excepteur minim aliqua.</p>
+        <p>Consectetur cupidatat in proident consectetur aliqua cillum nulla enim quis minim nulla nostrud. Dolore incididunt qui laborum consequat aute occaecat eu. Sint eiusmod in consequat nisi veniam adipisicing irure exercitation non. Ipsum ipsum nisi ut excepteur incididunt quis consectetur. Adipisicing minim cupidatat est et reprehenderit. Minim deserunt velit proident irure exercitation.</p>
+        <p>Eu exercitation cupidatat eu dolor ex dolor. Velit ullamco nostrud occaecat commodo enim consectetur commodo incididunt. Aute mollit irure sunt duis dolor fugiat. Fugiat commodo nostrud consequat nulla dolore magna sunt adipisicing ex tempor qui culpa nostrud anim. Eiusmod consequat do dolore veniam est proident ipsum exercitation reprehenderit non reprehenderit esse veniam tempor.</p>
+      </div>  
+</body>
+
+</html>
